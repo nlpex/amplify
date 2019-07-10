@@ -1,7 +1,15 @@
 ---
 layout: post
-title: Giving invalid parameter to pkill on macOS crashes the parent process
+title: (RETRACTED) Giving invalid parameter to pkill on macOS crashes the parent process
 ---
+
+THIS ARTICLE HAS BEEN RETRACTED.
+
+The bug described in this page is [of `/usr/local/bin/pkill` from proctools](https://sourceforge.net/p/proctools/bugs/1/), not of macOS's built-in `/usr/bin/pkill`.
+
+This article is remain unremoved just for web pages which refer this article.
+
+# Original Contents
 
 - `pkill` on macOS kills its parent process if a invalid parameter for a option is passed
 - Verified on OS X 10.11.6 (El Capitan) and macOS 10.12.6 (Sierra)
@@ -90,5 +98,3 @@ usage: pkill [-signal] [-ILfilnovx] [-F pidfile] [-G gid]
              [-t tty] [-u euid] pattern
 Done
 ```
-
-[日本語](http://nlpex.hatenablog.com/entry/2017/12/17/180856)
